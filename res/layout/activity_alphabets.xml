@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alphabets"
+    android:background="@drawable/alphabets">
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager2"
+        android:layout_width="306dp"
+        android:layout_height="199dp"
+        android:layout_below="@id/tab_layout"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="80dp" />
+
+    <Button
+        android:id="@+id/alpha_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_alphabets"
+        android:onClick="back_home"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/aplha_to_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/custom_alphabets"
+        android:onClick="back_english"
+        android:text="english" />
+</RelativeLayout>

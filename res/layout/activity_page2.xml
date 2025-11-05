@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_two"
+    tools:context=".page2">
+
+    <Button
+        android:id="@+id/english"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_page_two"
+        android:text="english"
+        android:onClick="english"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maths"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="100dp"
+        android:text="maths"
+        android:onClick="Maths"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_page_two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/english"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Button
+        android:id="@+id/evs"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="evs"
+        android:onClick="EVS"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_page_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maths" />
+
+    <Button
+        android:id="@+id/etiquettes"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="Etiquettes"
+        android:onClick="Etiquettes"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_page_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evs" />
+
+    <Button
+        android:id="@+id/rhymes"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:text="Rhymes and Stories"
+        android:onClick="RhymesAndStories"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_page_two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiquettes"
+        app:layout_constraintVertical_bias="0.166" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

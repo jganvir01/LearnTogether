@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action_words"
+    android:background="@drawable/action_word">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/action_word_view_pager"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="120dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/action_word_tab_layout"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="270dp"
+        app:tabTextColor="#CA7272" />
+
+    <Button
+        android:id="@+id/action_to_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="690dp"
+        android:layout_marginTop="315dp"
+        android:background="@drawable/custom_page_two"
+        android:onClick="actionToEnglish"
+        android:text="english"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <Button
+        android:id="@+id/action_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="595dp"
+        android:layout_marginTop="315dp"
+        android:background="@drawable/custom_page_two"
+        android:onClick="actionToHome"
+        android:text="home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+</RelativeLayout>

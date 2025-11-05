@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.learntogether">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".opposites"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".community_helper"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".action_words"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".alphabets"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".English"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".page2"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Subtraction"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Additionn"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".numbers"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Math"
+            android:exported="true"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".domestic"
+            android:screenOrientation="landscape"
+            android:exported="true" />
+        <activity
+            android:name=".Animals"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Vegetables"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Fruit"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".FruitsandVeg"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Family"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Body"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AboutMe"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Shapes"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Spring"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Rainy"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Winter"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Summer"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".EVS"
+            android:exported="true"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".Stories"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".Rhymes"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".RhymesAndStories"
+            android:screenOrientation="landscape"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".Prayer"
+            android:screenOrientation="landscape"
+            android:exported="true" />
+        <activity
+            android:name=".GoodHabits"
+            android:screenOrientation="landscape"
+            android:exported="true" />
+        <activity
+            android:name=".GoodManners"
+            android:screenOrientation="landscape"
+            android:exported="true" />
+        <activity
+            android:name=".Etiquettes"
+            android:screenOrientation="landscape"
+            android:exported="true">
+        </activity>
+    </application>
+
+
+</manifest>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/numbertwenty"
+    tools:context=".Number20">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:id="@+id/eleven"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/eleven"
+        android:onClick="eleven" />
+
+    <ImageButton
+        android:id="@+id/twelve"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/eleven"
+        android:background="@drawable/twelve"
+        android:onClick="twelve" />
+
+    <ImageButton
+        android:id="@+id/thirteen"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/twelve"
+        android:background="@drawable/thirteen"
+        android:onClick="thirteen" />
+
+    <ImageButton
+        android:id="@+id/fourteen"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="107dp"
+        android:layout_toEndOf="@+id/thirteen"
+        android:background="@drawable/fourteen"
+        android:onClick="fourteen" />
+
+    <ImageButton
+        android:id="@+id/fifteen"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_below="@+id/eleven"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/fifteen"
+        android:onClick="fifteen" />
+
+    <ImageButton
+        android:id="@+id/sixteen"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_below="@+id/twelve"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/fifteen"
+        android:background="@drawable/sixteen"
+        android:onClick="sixteen" />
+
+    <ImageButton
+        android:id="@+id/seventeen"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_below="@+id/thirteen"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/sixteen"
+        android:background="@drawable/seventeen"
+        android:onClick="seventeen" />
+
+    <ImageButton
+        android:id="@+id/eighteen"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_below="@+id/fourteen"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="110dp"
+        android:layout_toEndOf="@+id/seventeen"
+        android:background="@drawable/eighteen"
+        android:onClick="eighteen" />
+
+    <ImageButton
+        android:id="@+id/nineteen"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_below="@+id/sixteen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="307dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/nineteen"
+        android:onClick="nineteen" />
+
+    <ImageButton
+        android:id="@+id/twenty"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_below="@+id/seventeen"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/nineteen"
+        android:background="@drawable/twenty"
+        android:onClick="twenty" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="math_home"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/custom_math"
+        android:text="Home " />
+
+    <Button
+        android:id="@+id/math_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/custom_math"
+        android:onClick="back_math"
+        android:text="Math" />
+
+
+
+</RelativeLayout>

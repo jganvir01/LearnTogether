@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:onClick="etiquttes_home"
+    android:textAlignment="gravity"
+    tools:context=".Etiquettes">
+
+    <Button
+        android:id="@+id/mannersbtn"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="34dp"
+        android:height="20dp"
+        android:background="@drawable/custom_etiquttes"
+        android:fontFamily="sans-serif-black"
+        android:onClick="manners"
+        android:text="GOOD MANNERS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/habitsbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+    <Button
+        android:id="@+id/habitsbtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="40dp"
+        android:height="20dp"
+        android:background="@drawable/custom_etiquttes"
+        android:fontFamily="sans-serif-black"
+        android:onClick="Habits"
+        android:text="GOOD HABITS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/prayer"
+        app:layout_constraintEnd_toEndOf="@+id/prayer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mannersbtn"
+        app:layout_constraintTop_toBottomOf="@+id/mannersbtn" />
+
+    <Button
+        android:id="@+id/prayer"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="112dp"
+        android:height="20dp"
+        android:background="@drawable/custom_etiquttes"
+        android:onClick="prayer"
+        android:text="PRAYER"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/habitsbtn" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/mannersbtn"
+        app:layout_constraintStart_toStartOf="@+id/mannersbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/etiquttes_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_etiquttes"
+        android:text="home"
+        android:onClick="etiquttes_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+</androidx.constraintlayout.widget.ConstraintLayout>
